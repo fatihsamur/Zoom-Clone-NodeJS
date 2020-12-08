@@ -11,8 +11,84 @@
     </script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/85a45eeabc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="video-grid"></div>
+    <header>
+      <img
+        class="zoom_logo"
+        src="https://excelldesign.co.uk/wp-content/uploads/2020/04/Zoom-App-Icon-2.png"
+        alt="zoom-logo"
+      />
+      <h2>Zoom Clone</h2>
+    </header>
+    <main>
+      <div class="main_left">
+        <div class="main_videos">
+          <div id="video-grid"></div>
+        </div>
+
+        <div class="main_controls">
+          <div class="main_controls_block">
+            <div class="main_controls_button">
+              <i class="fas fa-microphone"></i>
+              <span> Mute </span>
+            </div>
+            <div class="main_controls_button">
+              <i class="fas fa-video"></i>
+              <span> Stop Video </span>
+            </div>
+          </div>
+
+          <div class="main_controls_block">
+            <div class="main_controls_button">
+              <i class="fas fa-shield-alt"></i>
+              <span> Security </span>
+            </div>
+            <div class="main_controls_button">
+              <i class="fas fa-user-friends"></i>
+              <span> Participants </span>
+            </div>
+            <div class="main_controls_button">
+              <i class="fas fa-comment-alt"></i>
+              <span> Chat </span>
+            </div>
+          </div>
+
+          <div class="main_controls_block">
+            <div class="main_controls_button red-text">
+              <i class="far fa-times-circle"></i>
+              <span> Leave Meeting </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main_right">
+        <div class="main_right_header">
+          <h5>Chat</h5>
+        </div>
+
+        <div class="main_chat_window">
+          <ul class="messages"></ul>
+        </div>
+
+        <div class="main_message_container">
+          <input
+            type="text"
+            placeholder="Type message here..."
+            id="chat_message"
+          />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Made with &nbsp; <span class="red-text"> &#x2764; </span>&nbsp; by &nbsp;
+      <a target="_blank" href="https://fatihsamur.com/"> Fatih Samur</a>
+    </footer>
   </body>
 </html>
