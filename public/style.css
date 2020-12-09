@@ -66,6 +66,7 @@ main {
 
 .main_chat_window {
   flex-grow: 1;
+  overflow-y: auto;
 }
 
 .main_message_container {
@@ -89,7 +90,7 @@ main {
   width: 100%;
   display: flex;
   color: #fff;
-  justify-content: space-between !important;
+  justify-content: center;
   padding: 10px 0;
 }
 .main_controls_block {
@@ -110,6 +111,17 @@ main {
 .main_controls_button:hover {
   background-color: #0000fd;
   border-radius: 5px;
+}
+
+.msg_list {
+  text-decoration: none;
+  list-style: none;
+  margin: 3px 3px;
+}
+
+.message {
+  color: #fff;
+  word-break: break-word;
 }
 
 footer {
@@ -134,10 +146,22 @@ footer a {
   main {
     flex-direction: column;
   }
+  .main_left {
+    flex: 0.7;
+  }
+  .main_right {
+    flex: 0.3;
+    overflow: auto;
+  }
   .main_controls {
     display: flex;
   }
   .main_controls_button {
     font-size: 10px;
+  }
+  .main_chat_window {
+    flex-grow: 1;
+    height: 100%;
+    overflow-y: auto;
   }
 }

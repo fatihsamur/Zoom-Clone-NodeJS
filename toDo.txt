@@ -1,0 +1,4 @@
+
+  refactor the script.js
+  
+  find better color palette for the layout !
